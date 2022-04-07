@@ -9,7 +9,7 @@ file(GLOB protos "proto/*.proto")
 
 protobuf_generate_cpp(PROTO_SRCS PROTO_HDRS ${protos})
 
-add_library(tensorboard_logger SHARED
+add_library(tensorboard_logger STATIC
     "src/crc.cc"
     "src/tensorboard_logger.cc"
     ${PROTO_SRCS}
