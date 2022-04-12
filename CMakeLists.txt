@@ -2,6 +2,7 @@ project(tensorboard_logger)
 cmake_minimum_required(VERSION 2.8.12)
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR})
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fPIC")
 set (CMAKE_CXX_STANDARD 11)
 find_package(Protobuf REQUIRED)
 
