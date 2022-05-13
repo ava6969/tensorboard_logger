@@ -27,7 +27,7 @@ message TensorProto {
   // Version number.
   //
   // In version 0, if the "repeated xxx" representations contain only one
-  // element, that element is repeated to fill the shape.  This makes it easy
+  // element, that element is repeated to fillFeatures the shape.  This makes it easy
   // to represent a constant Tensor with a single value.
   int32 version_number = 3;
 
